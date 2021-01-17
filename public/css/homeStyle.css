@@ -1,0 +1,27 @@
+#gambarhome1{
+margin-top:100px;
+margin-left:20px;
+}
+
+#slogan{
+color:white;
+opacity:0.6;
+}
+
+#homebagian1 {
+    z-index:1;
+}
+
+#homebagian2 {
+    text-align:center;
+}
+
+#segitiga1 {
+    position:absolute;
+    left:0;
+}
+
+#segitiga2 {
+    position:absolute;
+    right:0;
+}

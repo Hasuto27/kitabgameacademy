@@ -1,0 +1,26 @@
+runtime: php73
+
+handlers:
+- url: /(.*\.(gif|png|jpg|css|js))$
+  static_files: public/\1
+  upload: public/.*\.(gif|png|jpg|css|js)$
+
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
+
+env_variables:
+  ## Put production environment variables here.
+  APP_KEY: base64:DJYhgEYDYJgPg+zH4OQzQYFticvj4Hpk0bQ3bJ57Nx8=
+  APP_STORAGE: /tmp
+  VIEW_COMPILED_PATH: /tmp
+  SESSION_DRIVER: cookie
+
+  DB_CONNECTION: mysql
+  DB_HOST: 127.0.0.1
+  DB_PORT: 3306
+  DB_DATABASE: laravel
+  DB_USERNAME: root
+  DB_PASSWORD: managerterbaik
+  DB_SOCKET: "/cloudsql/kitabgameacademy:asia-southeast2:kitabgameacademydb"

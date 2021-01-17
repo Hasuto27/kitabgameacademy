@@ -1,0 +1,10 @@
+#backgroundlogin {
+    background-color: black;
+    color: white;
+}
+
+#judullogin {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}

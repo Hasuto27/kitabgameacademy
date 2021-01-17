@@ -1,0 +1,59 @@
+#profile{
+    margin-left:200px;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+#profilebagiankiri {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-style: solid;
+    border-color: #136DA5;
+    text-align: center;
+    background-color: #EDEDED;
+}
+.bagianfollow1 {
+    margin-right:45px;
+    margin-left:45px;
+}
+
+.bagianfollow2 {
+    font-weight:bold;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.menupilihanprofile {
+    color: black;
+    padding: 3px;
+    font-weight:bold;
+}
+
+    .menupilihanprofile a:hover {
+        color: #1A416E;
+    }
+
+#profilebagiankanan {
+    padding:0px;
+    border-style: solid;
+    border-color: #136DA5;
+}
+
+#judulprofile {
+    height:100px;
+    color:white;
+    font-size:30px;
+    text-align:center;
+    background-color: #1A416E;
+}
+
+#isiprofileprofile h2 {
+    padding-left:20px;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+#isiprofileprofile p {
+    padding-left: 20px;
+    font-size: 18px;
+}
