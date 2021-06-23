@@ -6,7 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Auth;
-use App\Models\Cart;
+use App\Models\cart;
 use App\Models\myprogramme;
 use App\Models\checkprogpermi;
 use App\Models\progress;
@@ -17,7 +17,7 @@ class CartController extends Controller
     public function addtocart(Request $request){
         $dbprogramme = DB::table('programmes')->where('id',$request->idprogramme)->first();
         $idprogramme = $request->idprogramme;
-        $cart = Cart::firstOrCreate(
+        $cart = cart::firstOrCreate(
         ['user_id' => Auth::id(),'programme_id' => $idprogramme],
         ['programme_name'=>$dbprogramme->title,'programme_price'=>$dbprogramme->price,'link_gambar'=>$dbprogramme->link_gambar],
          );
@@ -26,21 +26,21 @@ class CartController extends Controller
     }
 
     public function viewmycart(){
-         $item = Cart::all()->where('user_id',Auth::id());
+         $item = cart::all()->where('user_id',Auth::id());
         return view('user.cart.mycart', ['item' => $item]);
     }
 
     public function destroy(Request $request,Cart $cart){
-        $item = Cart::all()->where('user_id',Auth::id());
-        Cart::destroy($request->idcart);
+        $item = cart::all()->where('user_id',Auth::id());
+        cart::destroy($request->idcart);
         return redirect ('/user/cart/mycart')->with('alert','Successful Delete Programme !');
     }
 
-    public function checkout(Request $request,Cart $cart){
+    public function checkout(Request $request,cart $cart){
 
-        $item = Cart::all()->where('user_id',Auth::id());
+        $item = cart::all()->where('user_id',Auth::id());
 
-        if(Cart::all()->where('user_id',Auth::id())->count() > 0){
+        if(cart::all()->where('user_id',Auth::id())->count() > 0){
 
             foreach ($item as $item) {
                 $idprogramme = $item->programme_id;
@@ -64,7 +64,7 @@ class CartController extends Controller
                     ['programme_id',$item->programme_id],
                     ['part',1]
                     ])->update(['access'=>1]);
-                Cart::destroy($item->id);
+                cart::destroy($item->id);
              }
 
 
