@@ -2,28 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use App\Models\User;
+use Illuminate\Http\Request;
+use App\Models\myprogramme;
+use Auth;
+use Illuminate\Support\Facades\DB;
 
 class ProfileController extends Controller
 {
-    public function profile()
-    {
-        return view('profileprofile');
+    //
+
+    public function viewmyprofile(){
+        return view('/user/profile/myprofile');
     }
 
-    public function class()
-    {
-        return view('classprofile');
-    }
-
-    public function post()
-    {
-        return view('postprofile');
-    }
-
-    public function friend()
-    {
-        return view('friendprofile');
+    public function viewmyprogramme(Request $request){
+    $dbmyprogramme = myprogramme::all()->where('user_id',Auth::id());
+        return view('/user/profile/myprogramme',['myprogramme'=>$dbmyprogramme,]);
     }
 }

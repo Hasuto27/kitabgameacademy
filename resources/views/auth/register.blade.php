@@ -1,6 +1,6 @@
 @extends('layout/base')
 @section('container')
-<div class="container">
+<div class="container" id="containerregister">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div id="backgroundregis" class="card">

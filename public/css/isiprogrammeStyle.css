@@ -1,0 +1,70 @@
+
+.fixedjoinnow {
+    text-align: center;
+    position: absolute;
+    right:3%;
+    top:19%;
+    max-width:15vw;
+    width:100%;
+}
+
+.fixedjoinnow p{
+    margin-bottom:5vw;
+    font-size:1.5vw;
+    color:white;
+    font-weight:bold;
+}
+
+    .fixedjoinnow button {
+        font-size: 1vw;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        background-color: #00FFF5;
+        padding: 5px;
+        border-radius: 7px;
+    }
+
+
+        .fixedjoinnow button:hover {
+            background-color: #F94B15;
+        }
+
+.difficulty {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+    .difficulty h1 {
+        color: #00FFF5;
+        margin-bottom:10px;
+    }
+
+    .difficulty li {
+        display: inline;
+    }
+
+        .difficulty li img {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+#gambarbegginer {
+    margin-top:120px;
+}
+
+#blur {
+    opacity:.5;
+}
+
+.isicontentprogramme {
+    position:relative;
+}
+
+#bannerprogramme {
+    width:100%;
+    height:auto;
+    max-height:400px;
+    max-width:1300px;
+}

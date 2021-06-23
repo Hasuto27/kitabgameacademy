@@ -1,27 +1,133 @@
-#gambarhome1{
-margin-top:100px;
-margin-left:20px;
+
+    #slogan {
+        color: white;
+        opacity: 0.6;
+    }
+
+.homebagian1 {
+    animation-name: appear;
+    animation-duration: 3s;
+    z-index: 1;
+    margin-bottom: 270px;
+    text-align: center;
 }
 
-#slogan{
-color:white;
-opacity:0.6;
-}
+        .homebagian1 img {
+            width: 100%;
+            height: auto;
+        }
 
-#homebagian1 {
-    z-index:1;
-}
+        .homebagian2 p {
+            font-size: 1vw;
+            text-align: center;
+        }
 
-#homebagian2 {
-    text-align:center;
-}
-
-#segitiga1 {
-    position:absolute;
-    left:0;
-}
+        .homebagian2 h1 {
+            font-size: 1.5vw;
+            text-align: center;
+        }
 
 #segitiga2 {
-    position:absolute;
-    right:0;
+    float:right;
 }
+
+.homebagian3 {
+    position: relative;
+    margin-top: 400px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+    .homebagian3 img {
+        width: 100%;
+        height: auto;
+    }
+
+.tulisanjoinnow {
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+
+        .tulisanjoinnow p {
+            font-size: 2.5vw;
+            color: white;
+            font-weight: bold;
+        }
+
+        .tulisanjoinnow a {
+            font-size: 1.5vw;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            background-color: #00FFF5;
+            padding: 10px 20px;
+            border-radius: 5px;
+
+        }
+
+            .tulisanjoinnow a:hover {
+                background-color: #F94B15;
+            }
+
+.homebagian4 {
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:100px
+}
+
+.homebagian4 img{
+    width: 100%;
+    height: auto;
+    max-height:200px;
+    max-width:200px;
+}
+        .homebagian4 h1 {
+            margin-bottom: 100px;
+            color: #00FFF5;
+        }
+
+        .homebagian4 img:hover {
+            opacity: .7;
+        }
+
+        .kolomourlecturers h1 {
+            margin-bottom: 100px;
+            color: #00FFF5;
+        }
+
+    #judulwelcome {
+        margin-bottom: 50px;
+    }
+
+.kolomdiscord {
+    margin-top: 150px;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+#logodiscord {
+    height:15vw;
+    width:15vw;
+}
+
+.kolomdiscord p {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+
+.kolomdiscord a {
+    background-color: #00FFF5;
+    color: black;
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+    .kolomdiscord a:hover {
+        background-color: #F94B15;
+    }
+

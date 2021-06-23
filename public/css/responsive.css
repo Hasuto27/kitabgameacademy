@@ -1,0 +1,29 @@
+
+@media (min-width:1000px) {     /*for larger view*/
+}
+
+@media (max-width:1000px) {      /*for tablet*/
+    .listmenunav {
+        visibility: hidden;
+    }
+
+    .navbar {
+        height: 80px;
+    }
+
+    #hamburgermenu {
+        visibility: visible;
+    }
+}
+
+@media (max-width:675px) {      /*for smartphone*/
+    .listmenunav {
+        visibility:hidden;
+    }
+    .navbar {
+        height:80px;
+    }
+    #hamburgermenu {
+        visibility:visible;
+    }
+}

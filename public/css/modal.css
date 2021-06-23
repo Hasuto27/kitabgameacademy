@@ -1,0 +1,28 @@
+.modal {
+    margin-top: 100px;
+
+}
+.modal-content {
+    border: solid 5px #FF367E !important;
+    background-color: #1F1F1F !important;
+}
+    .modal-content p {
+        color: white !important;
+    }
+    .modal-content h4{
+        color: white !important;
+    }
+.modal-header {
+    border-bottom: solid 3px #FF367E !important;
+}
+.modalbody {
+
+}
+
+.modal-footer {
+    border-top: solid 3px #FF367E !important;
+}
+
+.close {
+color:white !important;
+}

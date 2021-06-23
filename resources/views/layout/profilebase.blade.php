@@ -1,22 +1,42 @@
 @extends('layout/base')
 @section('container')
-    <div class="row" id="profile">
-            <div class="col-md-3" id="profilebagiankiri">
-                <img src="picture/dp.png" /><br /><br />
-                <label style="font-weight:bold;">Hary Subroto</label><br /><br />
-                <label class="bagianfollow1" id="follower">41</label>
-                <label class="bagianfollow1" id="following">50</label><br />
-                <label class="bagianfollow2">Follower</label>
-                <label class="bagianfollow2">Following</label><br /><br />
-                <div class="menupilihanprofile">
-                <a class="menupilihanprofile" href="{{url('/profileprofile')}}">Profile</a><br />
-                <a class="menupilihanprofile" href="{{url('/classprofile')}}">Class</a><br />
-                <a class="menupilihanprofile" href="{{url('/postprofile')}}">Post</a><br />
-                <a class="menupilihanprofile" href="{{url('/friendprofile')}}">Friend</a>
+    <div class="profilecontainer">
+        <div class="profilecontainer-left">
+            <img src="/picture/profilepic.png" height="180px" widht="180px"></img>
+            <h1>{{Auth::user()->name}}</h1>
+            <li><a href="{{url('/myprofile')}}">My Profile</a></li>
+            <li><a href="{{url('/myprogramme')}}">My Programme</a></li>
+        </div>
+
+        <div class="profilecontainer-right">
+            <div class="profilecontainer-right-header">
+               <h1>@yield('headerprofile')</h1>
+               <img src="/picture/pangkat.png" height="80px" widht=""></img>
+               <h2 style="font-size:20px;">Level {{Auth::user()->level}}</h2>
+               <div class="kotak-expbar">
+                   <div class="kontainer-expbar">
+                        <h4>{{Auth::user()->currentexp}} / 1000 EXP</h4>
+                        <div class="expbar">
+
+                        </div>
+                   </div>
                 </div>
             </div>
-            <div class="col-md-7" id="profilebagiankanan">
-             @yield('containerprofile')
+            <div class="profilecontainer-right-body">
+                <div class="profilecontainer-right-body-contain">
+                        @yield('containerbodyprofile')
+               </div>
             </div>
-    </div><!--bagian profile-->
+        </div>
+    </div>
+    <script>
+        var $percent = <?php echo Auth::user()->currentexp /10; ?>;
+    $(document).ready(function(){
+
+            $(".expbar").animate({ width: $percent + "%" },2000);
+
+    });
+    </script>
 @endsection
+
+

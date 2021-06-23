@@ -1,0 +1,117 @@
+.containerlearn {
+    width: 100%;
+    display: flex;
+    position:relative;
+    animation-name:appear;
+    animation-duration:2s;
+}
+
+.video {
+    text-align:center;
+}
+
+.learnbagiankiri {
+    width: 60%;
+    height: 100%;
+    margin-left:40px;
+    margin-top:10px;
+}
+
+.learnbagiankanan {
+    margin-left:30px;
+    width: 35%;
+}
+
+.learnbagiankiri h2 {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 35px;
+    padding-bottom: 15px;
+    border-bottom: solid;
+    border-color: #FF367E;
+}
+
+.learnbagiankanan h1 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+
+.kolomlistvideo {
+    border-top: solid;
+    border-color: #FF367E;
+    list-style: none;
+}
+
+    .kolomlistvideo li {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        border-bottom: 1px solid;
+        border-color: #FF367E;
+        display:block;
+
+    }
+
+        .kolomlistvideo li img {
+            margin-right:10px;
+            margin-left:10px;
+        }
+
+
+
+        .kolomlistvideo li a {
+            font-size:14px;
+            font-weight:bold;
+            color:white;    
+        }
+
+.judulbesar {
+    text-align:center;
+    padding:30px;
+    margin-bottom:50px;
+    width:100%;
+    background: rgba(1,1,1,.5);
+    font-size:30px;
+    animation-name:appear;
+    animation-duration:3s;
+}
+
+.listactive {
+    background-color: #FFE4EE;
+
+}
+    .listactive a {
+        color: black !important;
+    }
+
+
+.locked {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.kotak-score {
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    background-color: grey;
+    border-radius: 20px;
+    border: solid 5px white;
+    padding:20px 40px;
+
+}
+.kotak-score-head {
+
+    color:white;
+
+}
+.kotak-score-body {
+    border-bottom: solid 3px white;
+    color: #00FFF5;
+}
+

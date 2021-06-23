@@ -1,0 +1,46 @@
+.bagian-progress-course {
+    margin: 50px;
+    border: solid 5px #FF367E;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    width: 70%;
+}
+
+.bagian-progress-course-satuan {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    border: solid 3px #FF367E;
+    border-radius: 5px;
+}
+.bagian-progress-course-satuan-kiri {
+    width: 25%;
+    padding: 5px 0;
+    margin-left:10px;
+}
+.bagian-progress-course-satuan-tengah {
+    width:60%;
+    margin-left:10px;
+    margin-right:10px;
+}
+.bagian-progress-course-satuan-kanan {
+    width: 15%;
+    padding: 5px 0;
+    margin-right:10px;
+}
+.kotakprogressbar {
+    width: 100%;
+    background-color: grey;
+    position: relative;
+    border-radius: 10px;
+}
+
+.progressbar {
+    width: 1%;
+    height: 30px;
+    background-color:#F59422;
+    border-radius: 10px;
+}

@@ -1,5 +1,5 @@
 #backgroundlogin {
-    background-color: black;
+    background-color: transparent;
     color: white;
 }
 
@@ -7,4 +7,11 @@
     text-align: center;
     font-size: 25px;
     font-weight: bold;
+    background-color: transparent;
+}
+
+#containerlogin {
+    margin-top: 20px;
+    animation-name: appear;
+    animation-duration: 3s;
 }

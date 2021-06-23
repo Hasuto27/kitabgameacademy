@@ -1,0 +1,78 @@
+/* The container */
+
+.kolommenuvideo {
+    position: relative;
+    min-height: 600px;
+    margin-top:30px;
+
+}
+
+.containermenuvideo {
+    display: inline-block;
+    position: static;
+    width: 200px;
+    cursor: pointer;
+    font-size: 22px;
+    float: left;
+}
+
+.judulmenu:hover {
+    opacity: .7;
+}
+
+/* Hide the browser's default radio button */
+.containermenuvideo input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.judulmenu {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.isi {
+    display: none;
+    border-top:solid;
+}
+
+.containermenuvideo input:checked ~ .isi {
+    display: block;
+}
+
+.deskripsimenuvideo {
+    width:100%;
+    position: absolute;
+    margin-top: 50px;
+    left: 10px;
+    background-color: #353535;
+    padding:20px;
+    border-radius:7px;
+}
+
+    .deskripsimenuvideo p {
+        font-size: 16px;
+    }
+
+    .deskripsimenuvideo a {
+        font-size: 18px;
+        float: right;
+        margin-left: 40px;
+    }
+
+        .deskripsimenuvideo a:hover {
+            opacity: .7;
+        }
+
+
+#tombolquiz {
+    display:block;
+    padding:10px;
+    color:white;
+    background:rgba(1,1,1,.3);
+    text-decoration:none;
+    border-radius:8px;
+}
+

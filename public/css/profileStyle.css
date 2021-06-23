@@ -1,59 +1,149 @@
-#profile{
-    margin-left:200px;
-    margin-top:50px;
-    margin-bottom:50px;
+
+.profilecontainer {
+    display:flex;
+    margin-top:30px;
 }
 
-#profilebagiankiri {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    border-style: solid;
-    border-color: #136DA5;
+.profilecontainer-left {
+    width: 30%;
     text-align: center;
-    background-color: #EDEDED;
-}
-.bagianfollow1 {
-    margin-right:45px;
-    margin-left:45px;
+    border-right: solid 2px #FF367E;
 }
 
-.bagianfollow2 {
-    font-weight:bold;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-.menupilihanprofile {
-    color: black;
-    padding: 3px;
-    font-weight:bold;
-}
-
-    .menupilihanprofile a:hover {
-        color: #1A416E;
+    .profilecontainer-left img {
+        border:solid 2px white;
+        border-radius:100px;
+        margin-bottom:10px;
     }
 
-#profilebagiankanan {
-    padding:0px;
-    border-style: solid;
-    border-color: #136DA5;
+    .profilecontainer-left li {
+        margin-bottom: 10px;
+        list-style: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .profilecontainer-left li {
+        text-decoration: none;
+        color: white;
+    }
+
+    .profilecontainer-left a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 5px;
+        font-size:18px;
+    }
+
+        .profilecontainer-left a:hover {
+            color: black;
+            background-color: #EDEDED;
+        }
+
+    .profilecontainer-left h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        border-bottom: solid 2px #FF367E;
+        padding: 30px;
+    }
+
+.profilecontainer-right {
+    width: 70%;
 }
 
-#judulprofile {
-    height:100px;
-    color:white;
-    font-size:30px;
-    text-align:center;
-    background-color: #1A416E;
+.profilecontainer-right-header {
+    text-align: center;
+    border-bottom: solid 6px #FF367E;
+    padding-bottom: 30px;
 }
 
-#isiprofileprofile h2 {
-    padding-left:20px;
-    font-size: 20px;
-    font-weight:bold;
+.profilecontainer-right-header h1{
+    font-size:26px;
+    margin-bottom:30px;
 }
 
-#isiprofileprofile p {
-    padding-left: 20px;
-    font-size: 18px;
+.profilecontainer-right-body {
+    min-height:300px;
+}
+
+.profile-container-myprogramme {
+    display: flex;
+    margin: 30px;
+    border-bottom: solid 2px #FF367E;
+    padding-bottom: 15px;
+}
+
+.profile-container-myprogramme-left {
+    text-align: center;
+    width: 30%;
+}
+
+.profile-container-myprogramme-left img{
+    margin-top:5px;
+    border-radius:10px;
+}
+
+.profile-container-myprogramme-right {
+    width: 70%;
+    position: relative;
+    background: rgba(128, 128, 128,.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-container-myprogramme-right h2{
+    font-size:20px;
+}
+
+    .profile-container-myprogramme-right p {
+        font-size: 12px;
+    }
+
+    .profile-container-myprogramme-right h3 {
+        font-size: 16px;
+        color:aqua;
+    }
+
+    .profile-container-myprogramme-right a {
+        font-size: 14px;
+        text-decoration:none;
+        color:white;
+        position:absolute;
+        bottom:10px;
+        right:10px;
+    }
+
+    .profile-container-myprogramme-right a:hover {
+        opacity:.8;
+    }
+
+
+.kotak-expbar {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.kontainer-expbar {
+    width: 100%;
+    background-color: grey;
+    position: relative;
+    border-radius: 10px;
+}
+
+    .kontainer-expbar h4 {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-weight:bold;
+    }
+
+.expbar {
+    width: 1%;
+    height: 30px;
+    background-color: #F59422;
+    border-radius: 10px;
 }
