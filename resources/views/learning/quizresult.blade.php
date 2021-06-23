@@ -16,7 +16,7 @@
                 <p>D. {{$soalquiz->option4}}</p>
                 <p style="color:#FF367E;">
                     Your Answer :  <?php
-                    switch($arrayjawaban{$index}){
+                    switch($arrayjawaban[$index]){
                     case 1:
                     echo('A');
                     break;
