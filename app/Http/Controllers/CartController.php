@@ -17,7 +17,7 @@ class CartController extends Controller
     public function addtocart(Request $request){
         $dbprogramme = DB::table('programmes')->where('id',$request->idprogramme)->first();
         $idprogramme = $request->idprogramme;
-        $cart = cart::firstOrCreate(
+        $cart = Cart::firstOrCreate(
         ['user_id' => Auth::id(),'programme_id' => $idprogramme],
         ['programme_name'=>$dbprogramme->title,'programme_price'=>$dbprogramme->price,'link_gambar'=>$dbprogramme->link_gambar],
          );
@@ -26,21 +26,21 @@ class CartController extends Controller
     }
 
     public function viewmycart(){
-         $item = cart::all()->where('user_id',Auth::id());
+         $item = Cart::all()->where('user_id',Auth::id());
         return view('user.cart.mycart', ['item' => $item]);
     }
 
     public function destroy(Request $request,Cart $cart){
-        $item = cart::all()->where('user_id',Auth::id());
+        $item = Cart::all()->where('user_id',Auth::id());
         cart::destroy($request->idcart);
         return redirect ('/user/cart/mycart')->with('alert','Successful Delete Programme !');
     }
 
     public function checkout(Request $request,Cart $cart){
 
-        $item = cart::all()->where('user_id',Auth::id());
+        $item = Cart::all()->where('user_id',Auth::id());
 
-        if(cart::all()->where('user_id',Auth::id())->count() > 0){
+        if(Cart::all()->where('user_id',Auth::id())->count() > 0){
 
             foreach ($item as $item) {
                 $idprogramme = $item->programme_id;
@@ -64,7 +64,7 @@ class CartController extends Controller
                     ['programme_id',$item->programme_id],
                     ['part',1]
                     ])->update(['access'=>1]);
-                cart::destroy($item->id);
+                Cart::destroy($item->id);
              }
 
 
