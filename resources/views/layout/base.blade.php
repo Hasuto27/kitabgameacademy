@@ -59,7 +59,7 @@
                          <a href="{{url('/programme')}}">Programme</a>
                             <div class="dropdown-content">
                                 <a href="{{url('/gametechnology')}}">Game Technology</a>
-                                <a href="{{url('/gameart')}}">2D Art (Coming Soon)</a>
+                                <a href="#">2D Art (Coming Soon)</a>
                                 <a href="#">3D Art (Coming Soon)</a>
                                 <a href="#">Game Design (Coming Soon)</a>
                             </div>
