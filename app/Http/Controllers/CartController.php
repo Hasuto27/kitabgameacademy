@@ -32,7 +32,7 @@ class CartController extends Controller
 
     public function destroy(Request $request,Cart $cart){
         $item = Cart::all()->where('user_id',Auth::id());
-        cart::destroy($request->idcart);
+        Cart::destroy($request->idcart);
         return redirect ('/user/cart/mycart')->with('alert','Successful Delete Programme !');
     }
 
