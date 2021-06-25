@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="/css/mycart.css">
     <link rel="stylesheet" href="/css/modal.css">
     <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/tutorial.css">
 
     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <!-- script-->
