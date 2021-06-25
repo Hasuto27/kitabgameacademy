@@ -1,5 +1,7 @@
 .listprogramme {
     position:relative;
+    animation-name:fadein;
+    animation-duration:2s;
 }
 .listprogramme a {
     display: block;

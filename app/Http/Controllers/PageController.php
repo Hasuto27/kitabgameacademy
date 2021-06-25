@@ -30,6 +30,11 @@ class PageController extends Controller
         return view('gametechnology');
     }
 
+    public function gameproduction()
+    {
+        return view('gameproduction');
+    }
+
     public function gameart()
     {
         return view('gameart');

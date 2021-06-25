@@ -186,6 +186,7 @@ footer {
 
 .listmenunav {
     margin:20px 10px;
+    display:block;
 }
     .listmenunav:hover {
         opacity:.8;
@@ -339,3 +340,48 @@ height:30px;
     opacity:.7;
 }
 
+.robottutor {
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+.dialog-ballon {
+width:85%;
+}
+
+.dialog-ballon p{
+color:white;
+text-align:center;
+font-size:16px;
+}
+
+    .dialog-ballon h3 {
+        color: #00FFF5;
+        text-align: center;
+    }
+
+.fototutor {
+    text-align: center;
+    border: solid 2px #00FFF5;
+    border-radius:10px;
+}
+
+.dialog-tutorial {
+    display:none;
+}
+.dialog-aktif {
+    display:block;
+}
+
+#tombolClose {
+    display: none;
+}
+
+#tombolOpenTutorial {
+    cursor:pointer;
+}
+
+#tombolPrev {
+    display:none;
+}

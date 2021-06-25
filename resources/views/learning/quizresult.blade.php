@@ -62,32 +62,32 @@
             <br>
             <a class="tombol"href="/learning/learn/{{$idprogramme}}/{{$idpart}}">Back to Learn</a>
             
-    <div id="modalEndQuiz" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-    <!-- Modal Alert Quiz-->
-        <div class="modal-content">
-          <div class="modal-header">
-              <h3 class="modal-title" style="color:#00FFF5;">Congratulation !!</h3>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body" style="color:black;">
-            <p style="text-align:center;">You just finish the quiz !</p>
-            <p style="text-align:center;">You Earn :</p>
-            <p style="text-align:center;">EXP : <span style="color:#00FFF5;">{{$exp}}</span></p>
-            <p style="text-align:center;">Poin : <span style="color:#00FFF5;">{{$poin}}</span></p>
-              <div class="kotak-expbar">
-                  <h2 style="color:white; text-align:center;">Lv. {{$freshdata->level}}</h2>
-                  <div class="kontainer-expbar">
-                      <h4>{{$freshdata->currentexp}} / 1000 EXP</h4>
-                      <div class="expbar"></div>
+            <div id="modalEndQuiz" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+            <!-- Modal Alert Quiz-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title" style="color:#00FFF5;">Congratulation !!</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                   </div>
-              </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="tombol" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-       </div>
+                  <div class="modal-body" style="color:black;">
+                    <p style="text-align:center;">You just finish the quiz !</p>
+                    <p style="text-align:center;">You Earn :</p>
+                    <p style="text-align:center;">EXP : <span style="color:#00FFF5;">{{$exp}}</span></p>
+                    <p style="text-align:center;">Poin : <span style="color:#00FFF5;">{{$poin}}</span></p>
+                      <div class="kotak-expbar">
+                          <h2 style="color:white; text-align:center;">Lv. {{$freshdata->level}}</h2>
+                          <div class="kontainer-expbar">
+                              <h4>{{$freshdata->currentexp}} / 1000 EXP</h4>
+                              <div class="expbar"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="tombol" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+               </div>
     </div>
             <div class="kotak-score">
                 <div class="kotak-score-header">

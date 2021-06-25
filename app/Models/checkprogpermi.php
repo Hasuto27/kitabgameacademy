@@ -10,7 +10,7 @@ class checkprogpermi extends Model
     use HasFactory;
             protected $fillable = [
         'user_id',
-        'game_technology_beginner',
-        'game_art',
+        '1',
+        '2',
     ];
 }

@@ -25,6 +25,6 @@ class CheckAccessPart
         if(in_array($dbcheck,$accesspart)){
             return $next($request);
         }
-        return redirect('/')->with('alert','You Dont have the access to it');
+        return redirect('/')->with('alert','You Dont have the access this part yet');
     }
 }

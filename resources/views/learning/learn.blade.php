@@ -58,13 +58,24 @@
                 <input type="radio" name="radio" id="tombolresource">
                     <p class="judulmenu">Quiz</p>
                     <div class="isi">
-                       <div class="deskripsimenuvideo">
-                       @if($rowmaterial->quiz_score==null)
-                           <a id="tombolquiz" data-toggle="modal" data-target="#modalStartQuiz">Do Quiz</a>
-                       @elseif($rowmaterial->quiz_score!=null)
-                           <h2>Your Score : {{$rowmaterial->quiz_score}}</h2>
-                       @endif
-                       </div>
+                        @if($material->programme_id==2)
+                           <div class="deskripsimenuvideo">
+                           @if($rowmaterial->done==0)
+                               <a id="tombolquiz" data-toggle="modal" href="/learning/survey/{{$material->programme_id}}/{{$material->part}}">Fill Survey</a>
+                           @elseif($rowmaterial->done!=0)
+                               <h3>Thanks For Your Cooperation !</h3>
+                               <h5>You Already Fill This Survey !</h5>
+                           @endif
+                           </div>
+                        @else
+                           <div class="deskripsimenuvideo">
+                           @if($rowmaterial->quiz_score==null)
+                               <a id="tombolquiz" data-toggle="modal" data-target="#modalStartQuiz">Do Quiz</a>
+                           @elseif($rowmaterial->quiz_score!=null)
+                               <h2>Your Score : {{$rowmaterial->quiz_score}}</h2>
+                           @endif
+                            </div>
+                        @endif
                     </div>
             </label>
 

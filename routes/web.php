@@ -18,6 +18,7 @@ Route::get('/login', [PageController::class, 'login']);
 Route::get('/register', [PageController::class, 'register']);
 Route::get('/programme', [PageController::class, 'programme']);
 Route::get('/gametechnology', [PageController::class, 'gametechnology']);
+Route::get('/gameproduction', [PageController::class, 'gameproduction']);
 //Route::get('/gameart', [PageController::class, 'gameart']);//
 Route::get('/error', [PageController::class, 'notfound']);
 
@@ -74,6 +75,8 @@ Route::group(['middleware' => ['auth','checkaccessprogramme:1']], function(){
         Route::group(['middleware' => ['auth','checkaccesspart:1']], function(){
             Route::get('/learning/quiz/{idprogramme}/{idpart}',[QuizController::class, 'viewquiz']);
             Route::post('/learning/quiz/{idprogramme}/{idpart}/check',[QuizController::class, 'checkquiz']);
+            Route::get('/learning/survey/{idprogramme}/{idpart}',[QuizController::class, 'survey']);
+            Route::post('/learning/survey/{idprogramme}/{idpart}/submit',[QuizController::class, 'submitSurvey']);
         });
     });
 });

@@ -3,20 +3,32 @@
 
     <div class="bagian-progress-course">
         <h2>My Progress</h2><br />
-        @if($dbmyprogramme != 0)
+        @if($countmyprogramme != 0)
+            @foreach($dbmyprogramme as $dbmyprogramme)
             <div class="bagian-progress-course-satuan">
                 <div class="bagian-progress-course-satuan-kiri">
-                    <p>{{$programme->title}}</p>
+                    <p>{{$dbmyprogramme->programme_name}}</p>
                 </div>
+
                 <div class="bagian-progress-course-satuan-tengah">
                     <div class="kotakprogressbar">
-                        <div class="progressbar"></div>
+                        <?php
+                       $part = $dbprogress->where('programme_id',$dbmyprogramme->programme_id);
+                       $jumlahpart = $part->count();
+                       $progress = $part->where('done',1)->count();
+                       if($jumlahpart!=0){$percent = $progress / $jumlahpart * 100;}else{$percent =0;}
+                        ?>
+                        <div style="width:<?php echo$percent;?>%"class="progressbar"></div>
+
                     </div>
                 </div>
                 <div class="bagian-progress-course-satuan-kanan">
-                    <p><?php if($jumlahpart !=0){echo $progress/$jumlahpart*100;}else {echo(0);}?>% ({{$progress}}/{{$jumlahpart}}) Parts</p>
+                    <p><?php
+                       if($jumlahpart != 0){echo $progress/$jumlahpart*100;}else {echo(0);}?>% ({{$progress}}/{{$jumlahpart}}) Parts</p>
+
                 </div>
             </div>
+        @endforeach
         @else
             <div class="notfoundmessage">
                <img src="/picture/maskotmessage.png" width="500px" height=""></img>
@@ -27,13 +39,6 @@
         @endif
     </div>
 
-<script>
-        var $percent = <?php if($jumlahpart !=0){echo $progress/$jumlahpart*100;}else {echo(0);}?>;
-    $(document).ready(function(){
 
-            $(".progressbar").animate({ width: $percent + "%" },2000);
-
-    });
-</script>
 @endsection
 

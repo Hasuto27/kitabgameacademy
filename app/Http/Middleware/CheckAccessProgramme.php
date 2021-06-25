@@ -17,7 +17,7 @@ class CheckAccessProgramme
      */
     public function handle(Request $request, Closure $next, ...$accessprogramme)
     {
-        $dbcheck = DB::table('checkprogpermis')->where('user_id',$request->user()->id)->value('game_technology_beginner');
+        $dbcheck = DB::table('checkprogpermis')->where('user_id',$request->user()->id)->value($request->idprogramme);
         if(in_array($dbcheck,$accessprogramme)){
             return $next($request);
         }

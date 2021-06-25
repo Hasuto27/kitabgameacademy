@@ -44,20 +44,23 @@ class CartController extends Controller
 
             foreach ($item as $item) {
                 $idprogramme = $item->programme_id;
-                $programmepart = material::all()->where('programme_id',$idprogramme);
+                $programmeparts = material::all()->where('programme_id',$idprogramme);
+                $index=1;
 
                 $dbprogramme = myprogramme::firstOrCreate(
                 ['user_id' => $item->user_id,'programme_id' => $item->programme_id],
                 ['programme_name'=>$item->programme_name,'link_gambar'=>$item->link_gambar]);
 
-                $dbcheck = checkprogpermi::firstOrCreate(
-                ['user_id' => $item->user_id],
-                ['game_technology_beginner'=>1]);
 
-                foreach($programmepart as $key=>$value){
+                    $dbcheck = checkprogpermi::firstOrCreate(
+                    ['user_id' => $item->user_id],
+                    [$item->programme_id=>1]);
+
+                    foreach($programmeparts as $programmepart){
                     $dbprogress = progress::firstOrCreate(
-                    ['user_id' => $item->user_id,'programme_id'=>$item->programme_id,'part'=>$key+=1]);
-                }
+                    ['user_id' => $item->user_id,'programme_id'=>$item->programme_id,'part'=>$index]);
+                    $index++;
+                    }
                 $progressfreshdata = DB::table('progress');
                 $updateaccess = $progressfreshdata->where([
                     ['user_id',$item->user_id],
