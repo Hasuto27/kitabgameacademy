@@ -292,7 +292,7 @@
                                   <li class="dialog-tutorial">
                                      <div class="dialog-ballon">
                                       <h3>Ended Tutorial</h3>
-                                      <p>Bagaimana? Seru kan belajar dengan website kami? jika ada masukan atau hal lainnya yang ingin disampaikan, jangan ragu sampaikan kepada kami time H2L!</p>
+                                      <p>Bagaimana? Seru kan belajar dengan website kami? jika ada masukan atau hal lainnya yang ingin disampaikan, jangan ragu sampaikan kepada kami tim H2L!</p>
                                       <p>PROTO-001, Pamit dulu gan ! Sampai Jumpa Lagi !</p>
                                      </div>
                                   </li>
