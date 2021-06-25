@@ -306,8 +306,7 @@
                     </div>
                </div>
            </div>
-  </body>
-    <script>
+          <script>
     $(document).ready(function(){
             setTimeout(function(){
                $(".notif-alert").fadeOut();
@@ -345,6 +344,8 @@
 
         });
     </script>
+  </body>
+
 <style>
     a:link {
     text-decoration: none;
