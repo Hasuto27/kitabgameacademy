@@ -52,7 +52,7 @@ class CartController extends Controller
                 ['programme_name'=>$item->programme_name,'link_gambar'=>$item->link_gambar]);
 
 
-                    $dbcheck = checkprogpermi::firstOrCreate(
+                    $dbcheck = checkprogpermi::firstOrNew(
                     ['user_id' => $item->user_id,$item->programme_id=>1]);
 
                     foreach($programmeparts as $programmepart){
