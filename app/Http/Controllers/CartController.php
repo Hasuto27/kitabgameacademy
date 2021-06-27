@@ -52,8 +52,11 @@ class CartController extends Controller
                 ['programme_name'=>$item->programme_name,'link_gambar'=>$item->link_gambar]);
 
 
-                    $dbcheck = checkprogpermi::firstOrNew(
-                    ['user_id' => $item->user_id,$item->programme_id=>1]);
+                    $dbcheck = checkprogpermi::firstOrCreate(
+                    ['user_id' => $item->user_id],
+                    [$item->programme_id=>1]);
+
+                    $updateaccessprogramme = checkprogpermi::all()->where('user_id',$item->user_id)->update([$item->programme_id => 1]);
 
                     foreach($programmeparts as $programmepart){
                     $dbprogress = progress::firstOrCreate(
