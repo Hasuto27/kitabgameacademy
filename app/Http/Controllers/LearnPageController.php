@@ -23,7 +23,7 @@ class LearnPageController extends Controller
         ])->get();
         $material = $programme->where('part',$idpart)->first();
         $rowmaterial = $progress->where('part',$idpart)->first();
-        return view('learning.learn',['material'=>$material,'programme'=>$programme,'progress'=>$progress,'rowmaterial'=>$rowmaterial,'idpart'=>$idpart]);
+        return view('learning.learn',['material'=>$material,'programme'=>$programme,'progress'=>$progress,'rowmaterial'=>$rowmaterial,'idpart'=>$idpart,'idprogramme'=>$idprogramme]);
     }
 
     //Menampilkan halaman utama dari myprogramme yang menampilkan keseluruhan programme yang telah di ambil

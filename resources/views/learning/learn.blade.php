@@ -25,6 +25,10 @@
                     <p class="judulmenu">Resource</p>
                     <div class="isi">
                         <div class="deskripsimenuvideo">
+                            @if($idprogramme==2)
+                                <a href="https://drive.google.com/file/d/1XxjMocY4_-sQvTJqO21sNz3xKxV0Xy7U/view?usp=sharing" target="_blank"><img src="/picture/logodownload.png" height="" widht=""></a>
+                                <p>PPT[1]-GameProduction</p>
+                            @else
                         <p>Link Download Unity Hub
                         <a href="https://unity3d.com/get-unity/download" target="_blank"><img src="/picture/logodownload.png" height="" widht=""></a>
                         </p>
@@ -50,6 +54,7 @@
                     <p>Link 2
                     <a href="https://pastebin.com/KvKsphg3" target="_blank"><img src="/picture/logodownload.png" height="" widht=""></a>
                     </p>
+                            @endif
                     </div>
                 </div>
             </label>

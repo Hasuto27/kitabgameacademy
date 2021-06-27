@@ -53,8 +53,7 @@ class CartController extends Controller
 
 
                     $dbcheck = checkprogpermi::firstOrCreate(
-                    ['user_id' => $item->user_id],
-                    [$item->programme_id=>1]);
+                    ['user_id' => $item->user_id,$item->programme_id=>1]);
 
                     foreach($programmeparts as $programmepart){
                     $dbprogress = progress::firstOrCreate(
