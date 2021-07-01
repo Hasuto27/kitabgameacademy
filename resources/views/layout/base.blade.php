@@ -68,6 +68,7 @@
                     </div>
                 </li>
                 <li class="listmenunav"><a href="{{url('/learning/home')}}">My Programme</a></li>
+                <li class="listmenunav"><a id="tombolOpenTutorial" data-toggle="modal" data-target="#modalTutorial">Tutorial</a></liclass="listmenunav">
             @endguest
 
             </ul>
@@ -84,28 +85,26 @@
                 @else
                     <div class="navbar-notifcart">
                         <div class="navbar-notifcart-satuan">
-                         <a href="{{ url('/user/cart/mycart') }}"><img src="/picture/cart.png" alt="Alternate Text" /></a>
+                         <a href="{{ url('/user/cart/mycart') }}"><img height="30px" widht="30px" src="/picture/cart.png" alt="Alternate Text" /></a>
                          @if($countcart=DB::table('carts')->where('user_id',Auth::user()->id)->count() !=0)  
                          <p>{{$countcart}}</p>
                             @endif
                         </div>
                         <div class="navbar-notifcart-satuan">
-                         <a href="{{ url('/notification') }}"><img src="/picture/notif.png" alt="Alternate Text" /></a>
+                         <a href="{{ url('/notification') }}"><img height="30px" widht="30px" src="/picture/notif.png" alt="Alternate Text" /></a>
                             @if($countnotif=DB::table('notifications')->where('user_id',Auth::user()->id)->count() !=0)  
                          <p>{{$countnotif}}</p>
                             @endif
+                        </div>
+                        <div class="navbar-notifcart-satuan">
+                            <img id="fotomrp" src="/picture/mrp.png" height="36px" widht="60px"></img
+                            ><label id="tulisanmrp">{{Auth::user()->militaryration}}</label>
                         </div>
 
                     </div>
                     <div class="dropdown" id="dropdownnama">
                         <div class="navbar-profile">
-                            <img src="/picture/profilepic.png" height="60px" widht="60px"></img>
-                            <ul class="list-menyamping">
-                                <li><p>{{Auth::user()->name}} (<span style="color:#00FFF5;">Lv.{{Auth::user()->level}}</span>)</p></li>
-                                <li><p>MR Poin : <span style="color:#00FFF5;">{{Auth::user()->militaryration}}</span></p></li> 
-                            </ul>
-
-
+                            <img id="fotoprofilenavbar" src="/picture/profilepic.png" height="60px" widht="60px"></img>
                         </div>
                             <div id="dropdown-content-nama">
                                 <div class="bagiandropdownprofile1">
@@ -115,10 +114,12 @@
                                     {{ Auth::user()->email }}
                                     </p>
                                 </div>
+                            <img style="margin:15px 0; margin-left:15px;" src="/picture/mrp.png" height="18px" widht="38px"></img>
+                            <label>{{Auth::user()->militaryration}}</label>
+                                <a class="hover" href="{{url('/myprofile')}}">My profile</a>
                                 <a class="hover" href="{{url('/user/cart/mycart')}}">My Cart</a>
                                 <a class="hover" href="{{url('/notification')}}">Notification</a>
-                                <a class="hover" href="{{url('/myprofile')}}">My profile</a>
-                                <a class="hover" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+                                <a style="    border-top: solid 1px #C01672;" class="hover" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">@csrf</form>
                             </div>
                     </div>
@@ -276,7 +277,9 @@
                                   <li class="dialog-tutorial">
                                      <div class="dialog-ballon">
                                       <h3>Quiz</h3>
-                                      <p>Asik ! kita mendapatkan EXP dan Poin setelah menyelesaikan Quiz ! EXP akan berguna untuk menaikan Level kita, dan Poin akan berguna untuk ditukarkan hal-hal yang menarik nantinya!</p>
+                                      <p>Asik ! kita mendapatkan Experience dan Military Ration setelah menyelesaikan Quiz !</p>
+                                      <p>Experience berguna untuk meningkatkan level pada programme kamu !</p>
+                                      <p>Sedangkan <img width="30px" height="20px" src="/picture/mrp.png" alt="Alternate Text" /> Mlitary Ration ini, adalah poin dalam platform ini yang bisa ditukarkan dengan hal menarik nantinya!</p>
                                       <img class="fototutor"width="500px" height="300px" src="/picture/tutorial/tutor12.png" alt="Alternate Text" />
                                      </div>
                                   </li>

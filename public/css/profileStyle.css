@@ -53,14 +53,24 @@
 }
 
 .profilecontainer-right-header {
-    text-align: center;
     border-bottom: solid 6px #FF367E;
-    padding-bottom: 30px;
+    padding-bottom:10px;
+    position:relative;
 }
 
-.profilecontainer-right-header h1{
-    font-size:26px;
-    margin-bottom:30px;
+
+.profilecontainer-right-juduldanlevel {
+    text-align:center;
+}
+
+.profilecontainer-right-mrp {
+    margin-top:20px;
+    margin-left:10px;
+}
+
+.profilecontainer-right-header h1 {
+    font-size: 26px;
+    margin-bottom: 30px;
 }
 
 .profilecontainer-right-body {

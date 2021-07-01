@@ -10,9 +10,11 @@
 
         <div class="profilecontainer-right">
             <div class="profilecontainer-right-header">
-               <h1>@yield('headerprofile')</h1>
+                <div class="profilecontainer-right-juduldanlevel">
+                                   <h1>@yield('headerprofile')</h1>
                <img src="/picture/pangkat.png" height="80px" widht=""></img>
                <h2 style="font-size:20px;">Level {{Auth::user()->level}}</h2>
+                </div>
                <div class="kotak-expbar">
                    <div class="kontainer-expbar">
                         <h4>{{Auth::user()->currentexp}} / 1000 EXP</h4>
@@ -21,6 +23,11 @@
                         </div>
                    </div>
                 </div>
+                <div class="profilecontainer-right-mrp">
+                    <img src="/picture/mrp.png" alt="Alternate Text" />
+                    <label>Military Ration : {{Auth::user()->militaryration}}</label>
+                </div>
+
             </div>
             <div class="profilecontainer-right-body">
                 <div class="profilecontainer-right-body-contain">
