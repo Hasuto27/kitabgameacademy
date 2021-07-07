@@ -18,8 +18,10 @@ class DashboardController extends Controller
             $countmyprogramme = myprogramme::all()->where('user_id',Auth::user()->id)->count();
             $programme = DB::table('programmes')->get();
             $dbprogress=DB::table('progress')->where('user_id',Auth::user()->id)->get();
-
-            return view ('user.dashboard.studentdashboard',['dbmyprogramme'=>$dbmyprogramme,'dbprogress'=>$dbprogress,'countmyprogramme'=>$countmyprogramme,'programme'=>$programme]);
+            $dbprogramme = DB::table('programmes')->get();
+            $dbschedule = DB::table('schedules')->where('user_id',Auth::user()->id)->get();
+            $countschedule = $dbschedule->count();
+            return view ('user.dashboard.studentdashboard',['dbmyprogramme'=>$dbmyprogramme,'dbprogress'=>$dbprogress,'countmyprogramme'=>$countmyprogramme,'programme'=>$programme,'dbprogramme'=>$dbprogramme,'dbschedule'=>$dbschedule,'countschedule'=>$countschedule]);
         }
     }
 }

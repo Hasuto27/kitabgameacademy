@@ -1,5 +1,5 @@
-header{
-    height:88px;
+header {
+    height: 88px;
 }
 
 .tombol {
@@ -9,19 +9,22 @@ header{
     background-color: #00FFF5;
     padding: 5px 10px;
     border-radius: 7px;
-
 }
+
     .tombol:hover {
         background-color: #F94B15;
-        color:white !important;
+        color: white !important;
     }
+
 .list-menyamping {
-    list-style-type:none;
-    padding:0;
+    list-style-type: none;
+    padding: 0;
 }
+
     .list-menyamping li {
-        list-style:none;
+        list-style: none;
     }
+
 body {
     color: #fff;
     background-color: #1F1F1F;
@@ -33,7 +36,7 @@ body {
     position: fixed;
     top: 0;
     right: 45%;
-    width:160px;
+    width: 160px;
     text-align: center;
     z-index: 5;
     background: rgba(255,1,1,.5);
@@ -41,9 +44,10 @@ body {
     border: solid 2px white;
     animation-name: fadein;
     animation-duration: 3s;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
 .pagecontain {
     width: 100%;
     margin-left: 10%;
@@ -55,7 +59,7 @@ body {
     min-height: 750px;
     border-left: solid 1px grey;
     border-right: solid 1px grey;
-    position:relative;
+    position: relative;
 }
 
 .pagecontain-dashboard {
@@ -63,7 +67,7 @@ body {
     padding-top: 77px;
     background: rgba(1,1,1,.3);
     min-height: 750px;
-    display:flex;
+    display: flex;
 }
 
 .pagecontain-dashboard-kiri {
@@ -80,22 +84,24 @@ body {
         padding: 0;
         margin-top: 20px;
     }
+
 .listmenudashboard {
     text-decoration: none;
     font-size: 20px;
     list-style: none;
-    padding:10px;
+    padding: 10px;
 }
 
-.listmenudashboard a{
-    display:block;
-    padding-left:10px;
-    color:white;
-}
-
-    .listmenudashboard a:hover {
-        color: black;
+    .listmenudashboard a {
+        display: block;
+        padding-left: 10px;
+        color: white;
     }
+
+        .listmenudashboard a:hover {
+            color: black;
+        }
+
     .listmenudashboard:hover {
         background-color: #00FFF5;
     }
@@ -111,8 +117,8 @@ body {
     padding-top: 100px;
     min-height: 650px;
 }
-footer {
 
+footer {
     width: 100%;
     animation-name: slidefrombot;
     animation-duration: 2s;
@@ -124,26 +130,27 @@ footer {
 }
 
 .footer {
-    padding-top:40px;
-    font-size:14px;
-}
-.footer li{
-    float:left;
-    padding-right:40px;
-    list-style:none;
+    padding-top: 40px;
+    font-size: 14px;
 }
 
-.footer a{
-    color:white;
-}
+    .footer li {
+        float: left;
+        padding-right: 40px;
+        list-style: none;
+    }
+
+    .footer a {
+        color: white;
+    }
 
     .footer p {
-        padding-left:50px;
+        padding-left: 50px;
     }
 
 
 .divkosong {
-    padding-bottom:73px;
+    padding-bottom: 73px;
 }
 
 .navigationbar {
@@ -157,13 +164,13 @@ footer {
 }
 
 .logonav {
-    margin:10px 25px;
+    margin: 10px 25px;
 }
 
 #hamburgermenu {
-    margin-top:10px;
-    display:block;
-    visibility:hidden;
+    margin-top: 10px;
+    display: block;
+    visibility: hidden;
 }
 
 .navbar-kiri li {
@@ -176,7 +183,7 @@ footer {
 }
 
 .logonav:active {
-    opacity:.8;
+    opacity: .8;
 }
 
 .logonav:hover {
@@ -185,11 +192,12 @@ footer {
 }
 
 .listmenunav {
-    margin:20px 10px;
-    display:block;
+    margin: 20px 10px;
+    display: block;
 }
+
     .listmenunav:hover {
-        opacity:.8;
+        opacity: .8;
     }
 
 .navbar-kiri a {
@@ -197,8 +205,8 @@ footer {
     color: white;
 }
 
-.hover:hover{
-opacity:0.8;
+.hover:hover {
+    opacity: 0.8;
 }
 
 ::placeholder {
@@ -207,9 +215,10 @@ opacity:0.8;
 
 .navbar-kanan {
     display: flex;
-    float:right;
-    margin-right:20px;
+    float: right;
+    margin-right: 20px;
 }
+
 .tombolregister {
     width: 80px;
     height: 40px;
@@ -229,9 +238,9 @@ opacity:0.8;
     .tombolregister a {
         color: black;
         font-weight: bold;
-        display:block;
-        margin-top:4px;
-        padding-top:4px;
+        display: block;
+        margin-top: 4px;
+        padding-top: 4px;
     }
 
 .tombollogin {
@@ -243,21 +252,22 @@ opacity:0.8;
     border-radius: 5px;
     border-color: #00FFF5;
     background-color: black;
-    margin:20px 5px;
+    margin: 20px 5px;
 }
 
 
-    .tombolregister:active {
-        transform:translateY(10%);
-        transform:translateY(10%);
-    }
+.tombolregister:active {
+    transform: translateY(10%);
+    transform: translateY(10%);
+}
+
 .tombollogin:active {
     transform: translateY(10%);
 }
 
-    .tombollogin:hover {
-        opacity: .7;
-    }
+.tombollogin:hover {
+    opacity: .7;
+}
 
 .tombollogin a {
     color: white;
@@ -269,15 +279,15 @@ opacity:0.8;
 
 
 #errormessage {
-    margin-top:150px;
-    font-size:40px;
-    text-align:center;
-    color:white;
-    opacity:.7;
+    margin-top: 150px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    opacity: .7;
 }
 
 .bold {
-    font-weight:bold;
+    font-weight: bold;
 }
 
 #dropdownnama {
@@ -290,8 +300,8 @@ opacity:0.8;
     }
 
 .navbar-profile {
-    display:flex;
-    margin:15px 10px;
+    display: flex;
+    margin: 15px 10px;
 }
 
     .navbar-profile img {
@@ -300,49 +310,51 @@ opacity:0.8;
 
 
 .modal-container {
-    display:none;
+    display: none;
 }
 
-.navbar-notifcart a{
-    margin:10px;
-    display:inline-block;
+.navbar-notifcart a {
+    margin: 10px;
+    display: inline-block;
 }
-.navbar-notifcart p{
-    position:absolute;
-    color:white;
-    z-index:5;
-    bottom:-2px;
-    background:rgba(255,0,0,.7);
-    border-radius:20px;
-    padding:4px 9px;
-    right:-5px;
+
+.navbar-notifcart p {
+    position: absolute;
+    color: white;
+    z-index: 5;
+    bottom: -2px;
+    background: rgba(255,0,0,.7);
+    border-radius: 20px;
+    padding: 4px 9px;
+    right: -5px;
 }
+
 .navbar-notifcart-satuan {
-    position:relative;
-    margin-right:5px;
-    margin-left:5px;
+    position: relative;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .navbar-notifcart {
     margin: 16px 0;
-    display:flex;
+    display: flex;
 }
 
-.navbar-notifcart a:hover {
-    opacity:.7;
-}
+    .navbar-notifcart a:hover {
+        opacity: .7;
+    }
 
 #fotomrp {
-    margin:13px 0;
-    margin-left:15px;
-    margin-right:0px;
-    padding:0;
+    margin: 13px 0;
+    margin-left: 15px;
+    margin-right: 0px;
+    padding: 0;
 }
 
 #tulisanmrp {
-    padding:2px 3px;
+    padding: 2px 3px;
     border-top: solid 2px #00FFF5;
     border-right: solid 2px #00FFF5;
     border-bottom: solid 2px #00FFF5;
-    margin-right:15px;
+    margin-right: 15px;
 }

@@ -1,46 +1,165 @@
+
+
 .bagian-progress-course {
-    margin: 50px;
-    border: solid 5px #FF367E;
+    margin-top: 20px;
+    border: solid 1px #FF367E;
     background-color: #1F1F1F;
     border-radius: 10px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 40px;
-    width: 70%;
 }
 
 .bagian-progress-course-satuan {
     display: flex;
     width: 100%;
     padding: 10px 0;
-    border: solid 3px #FF367E;
-    border-radius: 5px;
+    border-bottom: solid 1px #FF367E;
+    padding-bottom: 30px;
+    position: relative;
 }
 .bagian-progress-course-satuan-kiri {
-    width: 25%;
-    padding: 5px 0;
-    margin-left:10px;
+    width: 30%;
+    margin:30px 10px;
 }
-.bagian-progress-course-satuan-tengah {
-    width:60%;
-    margin-left:10px;
-    margin-right:10px;
-}
+
 .bagian-progress-course-satuan-kanan {
-    width: 15%;
+    width: 70%;
     padding: 5px 0;
-    margin-right:10px;
+    margin: 0px 20px;
+}
+
+.bagian-progress-course-satuan a{
+position:absolute;
+right:10px;
+margin:10px 0px;
+}
+
+.bagian-progress-course-satuan a:hover{
+    opacity:.7;
 }
 .kotakprogressbar {
     width: 100%;
-    background-color: grey;
+    background: rgba(1,1,1,.3);
     position: relative;
+    border-radius: 5px;
+    border: solid 1px #FF367E;
+    position:relative;
+}
+.persenprogress {
+    position:absolute;
+    color:white;
+    font-weight:bold;
+    left:50%;
+}
+.progressbar {
+    width: 1%;
+    height: 18px;
+    background-color: #F59422;
+    border-radius: 5px;
+}
+
+.bagian-schedule {
+    border: solid 1px #FF367E;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    margin: 20px 0px;
+}
+.bagian-mrp {
+    border: solid 1px #FF367E;
+    background-color: #1F1F1F;
     border-radius: 10px;
 }
 
-.progressbar {
-    width: 1%;
-    height: 30px;
-    background-color:#F59422;
+.bagian-mrp h4{
+text-align:center;
+padding: 10px 0;
+}
+
+.bagian-mrp-poin {
+    border-top: solid 2px #00FFF5;
+    border-right: solid 2px #00FFF5;
+    border-bottom: solid 2px #00FFF5;
+    padding: 2px 15px;
+    border-radius:7px;
+
+}
+
+.bagian-schedule h2 {
+    border-bottom: solid 1px #FF367E;
+    padding-bottom: 15px;
+}
+
+.bagian-progress-course h2 {
+    border-bottom: solid 1px #FF367E;
+    padding-bottom: 15px;
+}
+
+.bagian-profile {
+
+    background-color: #1F1F1F;
     border-radius: 10px;
+    display: flex;
+    position:relative;
+}
+
+.bagian-profile-kiri {
+    width:20%;
+    margin:20px;
+    text-align:center;
+}
+
+.bagian-profile-kiri img{
+    border-radius:100px;
+}
+
+.bagian-profile-tengah {
+    width: 40%;
+    margin:35px 0;
+}
+
+.bagian-profile-kanan {
+    width: 40%;
+    margin:50px 50px;
+}
+
+.container-dashboard {
+    display: flex;
+    margin: 10px;
+    margin-top:30px;
+}
+
+.container-dashboard-kiri {
+    width: 70%;
+    margin: 20px;
+
+}
+
+.container-dashboard-kanan {
+    width: 30%;
+    margin: 20px;
+}
+
+.template-dashboard-profile {
+    position: absolute;
+}
+
+.template-dashboard-profile img{
+    width:100%;
+}
+#frame-dashboard-profile-top {
+    top: 0;
+    width:100%;
+}
+
+#frame-dashboard-profile-bot {
+    bottom: 0;
+    width: 100%;
+}
+
+.bagian-profile-kiri img{
+    padding:20px;
 }

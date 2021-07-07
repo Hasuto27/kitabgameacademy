@@ -28,7 +28,11 @@ class LearnPageController extends Controller
 
     //Menampilkan halaman utama dari myprogramme yang menampilkan keseluruhan programme yang telah di ambil
     public function viewHome(){
-        $dbmyprogramme = myprogramme::all()->where('user_id',Auth::id());
-        return view('learning.home',['myprogramme'=>$dbmyprogramme,]);
+        $dbmyprogramme = DB::table('myprogrammes')->where('user_id',Auth::user()->id)->get();
+        $countmyprogramme = myprogramme::all()->where('user_id',Auth::user()->id)->count();
+        $programme = DB::table('programmes')->get();
+        $dbprogress=DB::table('progress')->where('user_id',Auth::user()->id)->get();
+        $dbprogramme = DB::table('programmes')->get();
+        return view ('learning.home',['dbmyprogramme'=>$dbmyprogramme,'dbprogress'=>$dbprogress,'countmyprogramme'=>$countmyprogramme,'programme'=>$programme,'dbprogramme'=>$dbprogramme]);
     }
 }

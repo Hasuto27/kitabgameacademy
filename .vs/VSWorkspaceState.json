@@ -4,12 +4,13 @@
     "\\App",
     "\\App\\Http",
     "\\App\\Http\\Controllers",
-    "\\App\\Http\\Middleware",
     "\\resources",
     "\\resources\\views",
     "\\resources\\views\\learning",
     "\\resources\\views\\user",
+    "\\resources\\views\\user\\dashboard",
     "\\routes"
   ],
+  "SelectedNode": "\\resources\\views\\learning\\home.blade.php",
   "PreviewInSolutionExplorer": false
 }

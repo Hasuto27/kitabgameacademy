@@ -152,7 +152,7 @@
     }
 
 .expbar {
-    width: 1%;
+    width: 0;
     height: 30px;
     background-color: #F59422;
     border-radius: 10px;

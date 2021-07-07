@@ -145,9 +145,7 @@
     <div class="footer">
         <ul>
             <li><p style="color:white;">@H2L_studio, Inc.2020</p></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
+            <li><a href="https://discord.gg/mRySECezZj" target="_blank" id="tomboljoindiscord">Discord</a></li>
         </ul>
     </div>
   </footer>
