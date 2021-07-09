@@ -58,7 +58,7 @@ class CartController extends Controller
 
                     $updateaccessprogramme = db::table('checkprogpermis')->where('user_id',$item->user_id)->update([$item->programme_id => 1]);
 
-                    foreach($programmeparts as $programmepart){
+                    foreach($programmeparts as $programmeparts){
                     $dbprogress = progress::firstOrCreate(
                     ['user_id' => $item->user_id,'programme_id'=>$item->programme_id,'part'=>$index]);
                     $index++;
